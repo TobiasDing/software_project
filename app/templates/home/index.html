@@ -2,16 +2,16 @@
 
 {% block content %}
 
-<section id="hotmovie" style="margin-top:76px">
-    <div class="container">
-        <div class="row wow fadeInRight" data-wow-delay="0.6s">
-            <div class="row">
-                <iframe class="wow fadeIn" width="100%" height="375px" frameborder=0 scrolling=no
-                        src="{{ url_for('home.animation')}}"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section id="hotmovie" style="margin-top:76px">-->
+    <!--<div class="container">-->
+        <!--<div class="row wow fadeInRight" data-wow-delay="0.6s">-->
+            <!--<div class="row">-->
+                <!--<iframe class="wow fadeIn" width="100%" height="375px" frameborder=0 scrolling=no-->
+                        <!--src="{{ url_for('home.animation')}}"></iframe>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 <section id="movielist">
     <div class="container">
@@ -38,9 +38,9 @@
                 <div class="movielist text-center">
                     <!--<img data-original="holder.js/262x166"
                              class="img-responsive lazy center-block" alt="">-->
-                    <img src="{{ url_for('static', filename='img/90后老阿姨.jpg') }}" class="img-responsive center-block" alt="">
+                    <img src="{{ url_for('static', filename='img/timg.jpg') }}" class="img-responsive center-block" alt="">
                     <div class="text-left" style="margin-left:auto;margin-right:auto;width:210px;">
-                        <span style="color:#999;font-style: italic;">90后老阿姨，耗时间三个月拍了一个片子，感动无数人</span><br>
+                        <span style="color:#999;font-style: italic;">Apple iPhone Xs Max 512GB</span><br>
                         <div>
                             <span class="glyphicon glyphicon-star" style="color:#FFD119"></span>
                             <span class="glyphicon glyphicon-star" style="color:#FFD119"></span>
@@ -49,7 +49,7 @@
                             <span class="glyphicon glyphicon-star-empty" style="color:#FFD119"></span>
                         </div>
                     </div>
-                    <a href="{{url_for('home.play')}}" class="btn btn-primary" target="_blank" role="button">&nbsp;查看详情</a>
+                    <a href="{{url_for('home.play')}}" class="btn btn-primary" target="_blank" role="button">&nbsp;立即购买</a>
                 </div>
             </div>
             {% endfor %}

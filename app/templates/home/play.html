@@ -20,32 +20,35 @@
 {% block content %}
 <div class="row">
     <div class="col-md-8">
-        <div id="moviecontainer"></div>
+        <!--<div id="moviecontainer"></div>-->
+        <div>
+            <img src="{{ url_for('static', filename='img/timg.jpg') }}" class="img-responsive center-block" alt="">
+        </div>
     </div>
     <div class="col-md-4" style="height:500px;">
         <div class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;电影介绍</h3>
+                <h3 class="panel-title"><span class="glyphicon glyphicon-facetime-video"></span>&nbsp;商品介绍</h3>
             </div>
             <div class="panel-body" style="height:459px;">
                 <table class="table">
                     <tr>
                         <td style="width:30%;color:#ccc;font-weight:bold;font-style:italic;">
-                            <span class="glyphicon glyphicon-film"></span>&nbsp;片名
+                            <span class="glyphicon glyphicon-film"></span>&nbsp;商品名
                         </td>
-                        <td>90后老阿姨，耗时间三个月拍了一个片子，感动无数人</td>
+                        <td>Apple iPhone Xs Max 512GB</td>
                     </tr>
                     <tr>
                         <td style="color:#ccc;font-weight:bold;font-style:italic;">
                             <span class="glyphicon glyphicon-tag"></span>&nbsp;标签
                         </td>
-                        <td>科幻</td>
+                        <td>手机</td>
                     </tr>
                     <tr>
                         <td style="color:#ccc;font-weight:bold;font-style:italic;">
-                            <span class="glyphicon glyphicon-time"></span>&nbsp;片长
+                            <span class="glyphicon glyphicon-euro"></span>&nbsp;价格
                         </td>
-                        <td>05:04</td>
+                        <td>12799 元</td>
                     </tr>
                     <tr>
                         <td style="color:#ccc;font-weight:bold;font-style:italic;">
@@ -69,38 +72,43 @@
                     </tr>
                     <tr>
                         <td style="color:#ccc;font-weight:bold;font-style:italic;">
-                            <span class="glyphicon glyphicon-calendar"></span>&nbsp;上映时间
+                            <span class="glyphicon glyphicon-calendar"></span>&nbsp;添加时间
                         </td>
-                        <td>2013年7月12日</td>
+                        <td>2018年11月12日</td>
                     </tr>
                     <tr>
                         <td style="color:#ccc;font-weight:bold;font-style:italic;">
-                            <span class="glyphicon glyphicon-play"></span>&nbsp;播放数量
-                        </td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td style="color:#ccc;font-weight:bold;font-style:italic;">
-                            <span class="glyphicon glyphicon-comment"></span>&nbsp;评论数量
+                            <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;销量
                         </td>
                         <td>1000</td>
                     </tr>
                     <tr>
                         <td style="color:#ccc;font-weight:bold;font-style:italic;">
-                            <span class="glyphicon glyphicon-picture"></span>&nbsp;影片介绍
+                            <span class="glyphicon glyphicon-comment"></span>&nbsp;评论数
+                        </td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#ccc;font-weight:bold;font-style:italic;">
+                            <span class="glyphicon glyphicon-picture"></span>&nbsp;商品简介
                         </td>
                         <td>
-                            你的样子就是你青春的样子，面对青春，不逃避，不跟随！为了我们自己！为了还年轻的我们！
+                            iPhone XS Max是美国Apple（苹果公司）旗下的智能手机设备，iPhone XS
+                            Max采用6.5英寸OLED屏幕，支持HDR10观影，配置IP68级别防水防尘，像素密度达到458ppi，支持3D Touch以及全新的Face ID。
                         </td>
                     </tr>
+
                 </table>
             </div>
+        </div>
+        <div class="col-md-4" style="height:500px;">
+            <a class="btn btn-danger" id="btn-buy"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;立即购买</a>
         </div>
     </div>
     <div class="col-md-12" style="margin-top:6px;">
         <div class="panel panel-danger">
             <div class="panel-heading">
-                <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span>&nbsp;电影评论</h3>
+                <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span>&nbsp;商品评论</h3>
             </div>
             <div class="panel-body">
                 <div class="alert alert-danger alert-dismissible" role="alert">
@@ -123,7 +131,7 @@
                     </div>
                     <a class="btn btn-success" id="btn-sub"><span class="glyphicon glyphicon-edit"></span>&nbsp;提交评论</a>
                     &nbsp;
-                    <a class="btn btn-danger" id="btn-col"><span class="glyphicon glyphicon-heart"></span>&nbsp;收藏电影</a>
+                    <a class="btn btn-danger" id="btn-col"><span class="glyphicon glyphicon-heart"></span>&nbsp;收藏商品</a>
                 </form>
                 <ul class="commentList">
                     <li class="item cl">
@@ -144,7 +152,7 @@
                                 </div>
                             </header>
                             <div class="comment-body">
-                                <p>这电影真好看！</p>
+                                <p>这部手机真好用！！</p>
                             </div>
                         </div>
                     </li>
@@ -166,7 +174,7 @@
                                 </div>
                             </header>
                             <div class="comment-body">
-                                <p>这电影真好看！</p>
+                                <p>这部手机真好用！！</p>
                             </div>
                         </div>
                     </li>
@@ -188,7 +196,7 @@
                                 </div>
                             </header>
                             <div class="comment-body">
-                                <p>这电影真好看！</p>
+                                <p>这部手机真好用！！</p>
                             </div>
                         </div>
                     </li>
@@ -210,7 +218,7 @@
                                 </div>
                             </header>
                             <div class="comment-body">
-                                <p>这电影真好看！</p>
+                                <p>这部手机真好用！！</p>
                             </div>
                         </div>
                     </li>
@@ -232,7 +240,7 @@
                                 </div>
                             </header>
                             <div class="comment-body">
-                                <p>这电影真好看！</p>
+                                <p>这部手机真好用！！</p>
                             </div>
                         </div>
                     </li>
