@@ -12,13 +12,12 @@ app.config["SECRET_KEY"] = 'b7632b20b23949038907a16c7f4b65cc'
 app.debug = True
 db = SQLAlchemy(app)
 
-
-
 from app.home import home as home_blueprint
 from app.admin import admin as admin_blueprint
 
 app.register_blueprint(home_blueprint)
 app.register_blueprint(admin_blueprint, url_prefix="/admin")
+
 
 @app.errorhandler(404)
 def page_not_found(error):
