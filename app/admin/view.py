@@ -186,3 +186,5 @@ def admin_add():
 @admin_login_req
 def admin_list():
     return render_template("admin/admin_list.html")
+
+

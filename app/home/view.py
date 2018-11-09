@@ -64,3 +64,6 @@ def play():
     return render_template("home/play.html")
 
 
+@home.route("/pay/")
+def pay():
+    return render_template("home/pay.html")

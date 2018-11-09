@@ -1,0 +1,39 @@
+{% extends "home/home.html" %}
+{% block content %}
+<div>
+    <h3>
+        确认订单信息
+    </h3>
+    <div class="-columns">
+        <div class="col-md-6">
+            <div class="movielist text-center">
+                <!--<img data-original="holder.js/262x166"
+                         class="img-responsive lazy center-block" alt="">-->
+                <img src="{{ url_for('static', filename='img/timg.jpg') }}" class="img-responsive center-block" alt="">
+                <div class="text-left" style="margin-left:auto;margin-right:auto;width:210px;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="-columns">
+        <div class="col-md-4">
+            <div style = "position:relative;left:20px; top: 60px;" class="movielist text-center">
+
+                <div class="text" style="margin-left:auto;margin-right:auto;width:400px;">
+                    <h3 style="color:black;font-style: inherit;">Apple iPhone Xs Max 512GB</h3>
+                    <h2 style="position:relative;color:black;font-style: inherit;">12799 元</h2><br>
+                    <span style="color:#999;font-style: inherit;position:absolute;left:45px; top: 110px">预计送达：2-3 周</span><br>
+                </div>
+            </div>
+
+            <div style = "position:relative;left: 60px ;top:200px">
+
+                <a class="btn btn-success" id="btn-sub"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;立即结算&nbsp;&nbsp; </a>
+                &nbsp;
+                <a class="btn btn-danger" id="btn-col"><span class="glyphicon glyphicon-heart"></span> 加入购物车</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
