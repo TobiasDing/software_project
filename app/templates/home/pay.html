@@ -1,5 +1,18 @@
 {% extends "home/home.html" %}
+
+
+{% block css %}
+
+<style>
+
+    .btn-buyit {
+        padding: 10px 30px;
+
+    }
+</style>
+{% endblock %}
 {% block content %}
+
 <div>
     <h3>
         确认订单信息
@@ -18,7 +31,7 @@
     </div>
     <div class="-columns">
         <div class="col-md-4">
-            <div style = "position:relative;left:20px; top: 60px;" class="movielist text-center">
+            <div style="position:relative;left:20px; top: 60px;" class="movielist text-center">
 
                 <div class="text" style="margin-left:auto;margin-right:auto;width:400px;">
                     <h3 style="color:black;font-style: inherit;">Apple iPhone Xs Max 512GB</h3>
@@ -27,11 +40,12 @@
                 </div>
             </div>
 
-            <div style = "position:relative;left: 60px ;top:200px">
+            <div style="position:relative;left: 60px ;top:200px">
 
-                <a class="btn btn-success" id="btn-sub"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;立即结算&nbsp;&nbsp; </a>
+                <a class="btn btn-success btn-buyit" id="btn-buy"><span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp;立即结算&nbsp;&nbsp;
+                </a>
                 &nbsp;
-                <a class="btn btn-danger" id="btn-col"><span class="glyphicon glyphicon-heart"></span> 加入购物车</a>
+                <a class="btn btn-danger btn-buyit" id="btn-col"><span class="glyphicon glyphicon-heart"></span> 加入购物车</a>
             </div>
         </div>
     </div>
